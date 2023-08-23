@@ -4,7 +4,7 @@ import { useEffect, useState } from "react"
 // This solution is not correct, though I am creating an interval to increase the count every
 // delay seconds but there is more delay (about 7-8 ms) which is happening in rerendering the component
 // which is resulting in about 1 sec delay output i.e. it is counting upto 1000 in 6 second instead of 5.
-const CountUp = ({totalCount, duration}) => {
+const CountUp1 = ({totalCount, duration}) => {
     const [count, setCount] = useState(1);
     const [time, setTime] = useState(0);
     const delay = (duration * 1000)/totalCount;
@@ -35,4 +35,4 @@ const CountUp = ({totalCount, duration}) => {
     )
 }
 
-export default CountUp
+export default CountUp1
