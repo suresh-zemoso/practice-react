@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import CountUp1 from './CountUp1';
+import CountUp from './CountUp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <CountUp totalCount={10} duration={5} /> */}
+      <CountUp1 totalCount={1000} duration={5}/>
     </div>
   );
 }
