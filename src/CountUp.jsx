@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react"
 
-const CountUp2 = ({totalCount, duration}) => {
+const CountUp = ({totalCount, duration}) => {
     const [count, setCount] = useState(1);
     const [time, setTime] = useState(0);
     const startTime = Date.now()
@@ -61,4 +61,4 @@ const CountUp2 = ({totalCount, duration}) => {
     )
 }
 
-export default CountUp2
+export default CountUp
